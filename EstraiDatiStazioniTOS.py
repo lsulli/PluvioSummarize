@@ -97,7 +97,11 @@ for line1 in lis:
                     # con i giorni dell'intervallo esaminato
                     ct = ct + 1
                     # scrivo tutta la linea nel file master.csv
-                    my_line = line2.replace(',','.')
+                    # sostituisco la virgola con il punto come separatore di decimale se richiesto
+                    if my_comma == 0:
+                        my_line = line2.replace(',','.')
+                    elif my_comma == 1:
+                        my_line = line2
                     w.write(cod + ';' + my_line)
                     # recupero il valore di precipitazione come stringa
                     my_p_str_value = (line2[11:(line2.find(';', 11))])
