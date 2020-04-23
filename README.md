@@ -13,9 +13,9 @@ codice (COD)
 nome stazione (stazione)
 comune (comune)
 coordinate gb (X_GB; Y_GB)
-primo giorno di registrazione dati prevalidati o validati (start_day),
-ultimo giorno di registrazione dati validati o prevalidati (end_day),
-giorni totali intervallo start_day - end_day (tot_days),
-giorni totali con dati misurati validati o prevalidati e non nulli(mis_days),
-giorni totali con dati misurati validati e non nulli (val),
+primo giorno di registrazione dati prevalidati o validati (start_day)
+ultimo giorno di registrazione dati validati o prevalidati (end_day)
+giorni totali intervallo start_day - end_day (tot_days)
+giorni totali con dati misurati validati o prevalidati e non nulli(mis_days)
+giorni totali con dati misurati validati e non nulli (val)
 giorni totali con dati misurati prevalidati e non nulli(preval).
