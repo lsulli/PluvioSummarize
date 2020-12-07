@@ -3,6 +3,7 @@ dall'utente partendo dai file di Output delle precipitazioni giornaliere disponi
 alla pagina web http://www.sir.toscana.it/ricerca-dati.
 
 Campi file output 'sum' della procedura EstraiDatiStazioniTOS.py
+
 codice (COD);
 nome stazione (stazione);
 comune (comune);
@@ -16,6 +17,7 @@ sommatoria dei dati di pioggia dei giorni validati, prevalidati o non nulli (cum
 EstraiDatiStazioniTOS_Stat.py: come sopra ma con campi aggiuntivi con statistiche di base per l'intervallo dato.
 
 Campi file output 'sum' della procedura EstraiDatiStazioniTOS.py
+
 codice (COD);
 nome stazione (stazione);
 comune (comune);
