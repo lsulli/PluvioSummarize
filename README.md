@@ -38,7 +38,7 @@ In entrambii casi per le statistiche sulle singole stazioni viene creato anche u
 
 Nei file TOS sono presenti dei refusi con attributo "validato" e valore di precipitazione nullo, questi sono scartati automaticamente.
 
-BatchDownloadStazioniTOS.py: procedura per scaricare automaticamente tutti i dati disponibili nell'elenco 'list_file.txt'
+BatchDownloadStazioniTOS.py: procedura per scaricare automaticamente tutti i dati disponibili nell'elenco 'list_file.txt' elenco di stazioni con misure cumulate giornaliere 09.00 - 09.00. Ovvero intervallo 01/12 - 05/12 si intende dalle 09.00 del 01/12 alle 09.00 del 04/12.
 
 CreaShapeStazioniTOS_Vita.py: procedura per creare file di tutte le stazioni con dati validi, prevalidati e non nulli per cui è disponibile un file TOS. Gli attributi riportano: 
 
