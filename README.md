@@ -16,7 +16,7 @@ sommatoria dei dati di pioggia dei giorni validati, prevalidati o non nulli (cum
 
 EstraiDatiStazioniTOS_Stat.py: come sopra ma con campi aggiuntivi con statistiche di base per l'intervallo dato.
 
-Campi file output 'sum' della procedura EstraiDatiStazioniTOS.py
+Campi file output 'stat' della procedura EstraiDatiStazioniTOS_stat.py
 
 codice (COD);
 nome stazione (stazione);
@@ -34,7 +34,7 @@ valore minimo di pioggia giornaliera nell'intervallo start_day - end_day (min)
 valore medio nell'intervallo mis_days (media)
 
 
-Per le statistiche sulle singole stazioni viene creato anche un file 'master' unico con tutti i dati giornalieri di tutte le stazioni con dati validati prevalidati e non nulli presenti nell'intervallo di tempo dato. 
+In entrambii casi per le statistiche sulle singole stazioni viene creato anche un file 'master' unico con tutti i dati giornalieri di tutte le stazioni con dati validati prevalidati e non nulli presenti nell'intervallo di tempo dato. 
 
 Nei file TOS sono presenti dei refusi con attributo "validato" e valore di precipitazione nullo, questi sono scartati automaticamente.
 
