@@ -5,8 +5,11 @@ alla pagina web http://www.sir.toscana.it/ricerca-dati e sacricabili automaticam
 Campi file output 'sum' della procedura EstraiDatiStazioniTOS.py
 
 codice (COD);
+
 nome stazione (stazione);
+
 comune (comune);
+
 coordinate gb (X_GB; Y_GB);
 primo giorno dell'intervallo indicato dall'utente (start_day);
 ultimo giorno dell'intervallo indicato dall'utente (end_day);
