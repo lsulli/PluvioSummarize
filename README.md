@@ -1,4 +1,4 @@
-EstraiDatiStazioniTOS.py: Procedura per creare file csv con coordinate GB delle stazioni del Servizio Idrografico della Regione Toscana (codice TOS) con cumulata dei valori di precipitazione validi o prevalidati disponibili e non nulli, per un periodo arbitrario definito
+**EstraiDatiStazioniTOS.py**: Procedura per creare file csv con coordinate GB delle stazioni del Servizio Idrografico della Regione Toscana (codice TOS) con cumulata dei valori di precipitazione validi o prevalidati disponibili e non nulli, per un periodo arbitrario definito
 dall'utente. I dati sorgente delle precipitazioni giornaliere sono disponibili
 alla pagina web http://www.sir.toscana.it/ricerca-dati e sacricabili automaticamente tramite BatchDownloadStazioniTOS.py (installare il modulo requests)
 
@@ -23,7 +23,7 @@ sommatoria dei dati di pioggia dei giorni validati, prevalidati o non nulli (sum
 
 
 
-EstraiDatiStazioniTOS_Stat.py: come sopra ma con campi aggiuntivi con statistiche di base per l'intervallo dato.
+**EstraiDatiStazioniTOS_Stat.py**: come sopra ma con campi aggiuntivi con statistiche di base per l'intervallo dato.
 
 Campi file output 'stat' della procedura EstraiDatiStazioniTOS_stat.py
 
@@ -65,7 +65,7 @@ In entrambii casi per le statistiche sulle singole stazioni viene creato anche u
 
 Nei file TOS sono presenti dei refusi con attributo "validato" e valore di precipitazione nullo, questi sono scartati automaticamente.
 
-BatchDownloadStazioniTOS.py: procedura per scaricare automaticamente tutti i dati disponibili nell'elenco 'list_file.txt' elenco di stazioni con misure cumulate giornaliere 09.00 - 09.00. Ovvero intervallo 01/12 - 05/12 si intende dalle 09.00 del 01/12 alle 09.00 del 04/12. Deve essere installato il modulo requests (https://pypi.org/project/requests/2.7.0/)
+**BatchDownloadStazioniTOS.py**: procedura per scaricare automaticamente tutti i dati disponibili nell'elenco 'list_file.txt' elenco di stazioni con misure cumulate giornaliere 09.00 - 09.00. Ovvero intervallo 01/12 - 05/12 si intende dalle 09.00 del 01/12 alle 09.00 del 04/12. Deve essere installato il modulo requests (https://pypi.org/project/requests/2.7.0/)
 
 CreaShapeStazioniTOS_Vita.py: procedura per creare file di tutte le stazioni con dati validi, prevalidati e non nulli per cui è disponibile un file TOS. Gli attributi riportano: 
 
