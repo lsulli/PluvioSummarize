@@ -13,11 +13,11 @@ import datetime
 # python BatchDownload.py
 # ATTENZIONE: usate sempre \\ come separatore di directory!!
 
-file_dir = 'C:\\2_LSulli\\15_Pluviometria\\origine'
+file_dir = '\\origine'
 
 # Directory di destinazione dei file di Output:
 
-output_dir = 'C:\\2_LSulli\\15_Pluviometria'
+output_dir = '\\Pluviometria'
 
 # crea una lista con tutti i file nella directory
 lis = os.listdir(file_dir)
@@ -49,15 +49,17 @@ out_sum = output_dir + '\\sum_' + startstr + '_' + endstr + '.csv'
 # conversione da stringa a formato data
 start = datetime.datetime.strptime(start_string, '%d/%m/%Y')
 end = datetime.datetime.strptime(end_string, '%d/%m/%Y')
-# calcolo dei giorni nell'intervallo richiesto: attenzione l'intervallo è dato dal primo all'ultimo giorno compresi, non è una sottrazione matematica. 
+# calcolo dei giorni nell'intervallo richiesto: attenzione l'intervallo è dato dall'inzio della data d1 all'inzio della data d2, 
+# quindi quest'ultima è esclusa dal conteggio (es. 01/01/2020 - 11/01/2020 sono 10 giorni per datetime)
+
 tot_days = end - start
 
 # si creano i file e si scrive i nomi di colonna
-w = open(out_file, 'a+')
+w = open(out_file, 'a+') #file master
 w.write('cod; date; pluvio; validaz' + '\n')
 
-w2 = open(out_sum, 'a+')
-w2.write('cod; Stazione;  X_GB; Y_GB; start_day; end_day; tot_days; mis_days; cumul' + '\n')
+w2 = open(out_sum, 'a+') # file sommatoria
+w2.write('cod; Stazione;  X_GB; Y_GB; start_day; end_day; tot_days; mis_days; sum' + '\n')
 
 # loop nei file di input per recuperare i dati dei file di output
 for line1 in lis:
@@ -120,6 +122,8 @@ for line1 in lis:
             my_sum_str_comma = my_sum_str
        
         # scrivo nel file sum.csv solo se sono stati trovati valori validi o prevalidati e not null
+        # aggiungo +1 all'intervallo di tempo dato che il processo a trattato tutti i giorni dell'intervallo (vedi sopra)
+        
         if ct > 0:
             w2.write(cod + ';' + name + ';'+ x_gb + ';' + y_gb + ';' + start_string + ';' + end_string + ';' + str((tot_days.days) + 1)
             + ';' + str(ct) + ';' + my_sum_str_comma + ';' + '\n')
