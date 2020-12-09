@@ -19,7 +19,8 @@ giorni totali intervallo start_day - end_day (tot_days);
 
 giorni totali con dati misurati validati o prevalidati e non nulli(mis_days);
 
-sommatoria dei dati di pioggia dei giorni validati, prevalidati o non nulli (sum)
+sommatoria dei dati di pioggia dei giorni validati, prevalidati o non nulli (sum).
+
 
 
 EstraiDatiStazioniTOS_Stat.py: come sopra ma con campi aggiuntivi con statistiche di base per l'intervallo dato.
@@ -56,7 +57,7 @@ valore medio nell'intervallo mis_days (mean)
 
 valore mediano (interpolato) nell'intervallo mis_days (median)
 
-Valore deviazione standard nell'intervallo mis_days (stdev)
+Valore deviazione standard nell'intervallo mis_days (stdev).
 
 
 
