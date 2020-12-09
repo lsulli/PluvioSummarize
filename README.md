@@ -1,4 +1,4 @@
-EstraiDatiStazioniTOS.py: Procedura per creare file csv con coordinate GB delle stazioni del Servizio Idrografico Regionale (codice TOS) con cumulata dei valori di precipitazione validi o prevalidati disponibili e non nulli, per un periodo arbitrario definito
+EstraiDatiStazioniTOS.py: Procedura per creare file csv con coordinate GB delle stazioni del Servizio Idrografico della Regione Toscana (codice TOS) con cumulata dei valori di precipitazione validi o prevalidati disponibili e non nulli, per un periodo arbitrario definito
 dall'utente. I dati sorgente delle precipitazioni giornaliere sono disponibili
 alla pagina web http://www.sir.toscana.it/ricerca-dati e sacricabili automaticamente tramite BatchDownloadStazioniTOS.py (installare il modulo requests)
 
@@ -12,7 +12,7 @@ primo giorno dell'intervallo indicato dall'utente (start_day);
 ultimo giorno dell'intervallo indicato dall'utente (end_day);
 giorni totali intervallo start_day - end_day (tot_days);
 giorni totali con dati misurati validati o prevalidati e non nulli(mis_days);
-sommatoria dei dati di pioggia dei giorni validati, prevalidati o non nulli (cumul)
+sommatoria dei dati di pioggia dei giorni validati, prevalidati o non nulli (sum)
 
 EstraiDatiStazioniTOS_Stat.py: come sopra ma con campi aggiuntivi con statistiche di base per l'intervallo dato.
 
