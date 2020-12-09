@@ -67,15 +67,25 @@ Nei file TOS sono presenti dei refusi con attributo "validato" e valore di preci
 
 **BatchDownloadStazioniTOS.py**: procedura per scaricare automaticamente tutti i dati disponibili nell'elenco 'list_file.txt' elenco di stazioni con misure cumulate giornaliere 09.00 - 09.00. Ovvero intervallo 01/12 - 05/12 si intende dalle 09.00 del 01/12 alle 09.00 del 04/12. Deve essere installato il modulo requests (https://pypi.org/project/requests/2.7.0/)
 
-CreaShapeStazioniTOS_Vita.py: procedura per creare file di tutte le stazioni con dati validi, prevalidati e non nulli per cui è disponibile un file TOS. Gli attributi riportano: 
+**CreaShapeStazioniTOS_Vita.py**: procedura per creare file di tutte le stazioni con dati validi, prevalidati e non nulli per cui è disponibile un file TOS. Gli attributi riportano: 
 
 codice (COD);
+
 nome stazione (stazione);
+
 comune (comune);
+
 coordinate gb (X_GB; Y_GB);
+
 primo giorno di registrazione dati prevalidati o validati (start_day);
+
 ultimo giorno di registrazione dati validati o prevalidati (end_day);
+
 giorni totali intervallo start_day - end_day (tot_days);
+
 giorni totali con dati misurati validati o prevalidati e non nulli(mis_days);
+
 giorni totali con dati misurati validati e non nulli (val);
+
 giorni totali con dati misurati prevalidati e non nulli(preval).
+
