@@ -13,11 +13,11 @@ import datetime
 # python BatchDownload.py
 # ATTENZIONE: usate sempre \\ come separatore di directory!!
 
-file_dir = '\\origine'
+file_dir = '.\\origine'
 
 # Directory di destinazione dei file di Output:
 
-output_dir = '\\Pluviometria'
+output_dir = '.\\Pluviometria'
 
 # crea una lista con tutti i file nella directory
 lis = os.listdir(file_dir)
